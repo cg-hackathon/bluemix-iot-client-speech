@@ -1,0 +1,11 @@
+see the logs of bluemix
+cf api https://api.eu-gb.bluemix.net
+cf login -u rainer.schmidt@capgemini.com -o Germany -s Rainer_Schmidt
+cf logs AmbulanceDispatcherWebApp
+
+locally use debugger
+npm install -g node-inspector
+node-debug --web-port=8989 app.js
+
+locally build and run
+npm run watch

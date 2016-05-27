@@ -1,0 +1,46 @@
+//- layout.jade
+doctype html
+html(lang="en")
+  head
+    block title
+      title Ambulance Dispatcher
+
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    style.
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
+    link(rel="icon", href="/images/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="/css/watson-bootstrap-dark.css")
+    link(rel="stylesheet", href="/css/browser-compatibility.css")
+    link(rel="stylesheet", href="/css/style.css")
+    block extrahead
+  body
+    block body-content
+      div.container
+        div.row
+          div.col-lg-12
+            // div.row.top-nav
+            //  div.col-lg-12
+            //    a.leftAmbulance Dispatcher
+            //    a.right(href='http://xxxx.eu-gb.mybluemix.net/#/') Other Web Application
+            div.row.header(style='padding-bottom:0px;')
+              div.avatar.img-container.col-lg-2.col-md-2.visible-lg.visible-md
+                img(src='/images/watson.gif')
+              div.col-lg-10.col-md-10
+                h2 Ambulance Dispatcher 
+                h2 Powered by IBM Watson Speech To Text
+      div.container
+        block row-content
+    script(type='text/javascript', src="/js/css_browser_selector.js")
+    script(type='text/javascript', src="/js/browser-detector.js")
+    script(type='text/javascript', src="/js/jquery-1.11.1.min.js")
+    script(type='text/javascript', src='/js/speech-recognizer.js')
+    script(type='text/javascript', src='/js/socket.io.js')
+    script(type='text/javascript', src="/js/demo.js")
+    script(type='text/javascript', src="/js/speech.js")

@@ -1,0 +1,13 @@
+---
+declared-services:
+  speech-to-text-service:
+    label: speech_to_text
+    plan: standard
+applications:
+- name: AmbulanceDispatcherWebApp
+  command: node app.js
+  path: .
+  memory: 512M
+  services:
+    - speech_to_text
+  host: AmbulanceDispatcherWebApplication
