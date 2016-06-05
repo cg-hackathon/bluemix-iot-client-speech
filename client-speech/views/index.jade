@@ -1,24 +1,37 @@
 extends ./layout.jade
 
 block row-content
-  div.row
-    div.col-lg-12.col-lg-12.col-xs-12
-        h3 Click the Microphone button and speak into your microphone. <BR> Afterwards click the Stop button.
+ .jumbotron
+   .col-lg-8.col-md-8
+     h2 Ambulance Dispatcher Control Center
+   .col-lg-4.col-md-4
+     img.img-responsive(src='/images/capgemini-logo.jpg')
+ .row
+   .col-lg-12.col-lg-12.col-xs-12
+        h3 Speech Controlled Ambulance Dispatching
         div.well
           form#qaForm.form-horizontal(action='/ask',method='post')
             fieldset
               div.form-group.row
                 div.col-lg-10.col-md-10.col-xs-9
                   input#questionText.form-control(name="questionText",
-                    placeholder="Speak into the microphone the place of the accident",
+                    placeholder="Click the Microphone button and speak into your microphone. Afterwards click the Stop button.",
                     required="true", value='#{questionText ? questionText : ""}')
                 div.col-lg-2.col-md-2.col-xs-3.ie-speak
                   button#listen.btn.btn-block.mic.listen(type='button')
                   div.arrow-box
                     p This browser doesn't provide a method to access the microphone.
                       |   Use Chrome or Firefox to speak questions.
+                      
+   .col-lg-12.col-lg-12.col-xs-12
+        h3 Map Controlled Ambulance Dispatching
+        p Click into the map to dispatch an ambulance to the selected location.
         // TODO AJUST TO YOUR ENVIRONMENT!
-        iframe(src="http://routewebapplication.mybluemix.net/index-embedded.html" width="90%" height="400")
-        // iframe(src="http://localhost:9080/RouteWebApplication/index-embedded.html" width="90%" height="400")
+        iframe(src="http://routewebapplication.mybluemix.net/index-embedded.html" width="100%" height="400")
+        // iframe(src="http://localhost:9080/RouteWebApplication/index-embedded.html" width="100%" height="400")
         // END OF AJUSTMENT TO YOUR ENVIRONMENT!
            Your browser cannot show iFrames.
+
+ .footer
+    .container
+      p.muted.credit Powered by IBM Watson IoT, Watson Speech-to-Text and Google Geocoding
