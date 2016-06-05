@@ -45,7 +45,7 @@ The most important components of the application are as follows:
 * ```RouteWebApp```- the application showing the cars, the ambulances and controls which ambulance 
   will send to the place of accident. The application is accessed by it's REST interface
 
-##Run application in Bluemix
+## Run application in Bluemix
 * Configure Application
   * choose runtime *Node.js*
   * add a service *Speech to Text*
@@ -61,7 +61,7 @@ The most important components of the application are as follows:
 * change the host to your chosen value in file ```manifest.yml```:
   * ```host: AmbulanceDispatcherWebApp```
 
-##Test application local
+## Test application local
 * install node framework locally (e.g. from https://nodejs.org/en/download/)
 * Clone the projects locally
 * import projects into IDE
