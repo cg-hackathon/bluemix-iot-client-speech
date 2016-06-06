@@ -21,22 +21,8 @@ html(lang="en")
     link(rel="stylesheet", href="/css/style.css")
     block extrahead
   body
-    block body-content
-      div.container
-        div.row
-          div.col-lg-12
-            // div.row.top-nav
-            //  div.col-lg-12
-            //    a.leftAmbulance Dispatcher
-            //    a.right(href='http://xxxx.eu-gb.mybluemix.net/#/') Other Web Application
-            div.row.header(style='padding-bottom:0px;')
-              div.avatar.img-container.col-lg-2.col-md-2.visible-lg.visible-md
-                img(src='/images/watson.gif')
-              div.col-lg-10.col-md-10
-                h2 Ambulance Dispatcher 
-                h2 Powered by IBM Watson Speech To Text
-      div.container
-        block row-content
+    div.container
+     block row-content
     script(type='text/javascript', src="/js/css_browser_selector.js")
     script(type='text/javascript', src="/js/browser-detector.js")
     script(type='text/javascript', src="/js/jquery-1.11.1.min.js")
