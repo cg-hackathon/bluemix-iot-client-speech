@@ -1,6 +1,6 @@
 ---
 declared-services:
-  speech-to-text-service:
+  S2T_Group<number>: #TODO use case 3 Enter name of your speech to text service instance
     label: speech_to_text
     plan: standard
 applications:
@@ -9,5 +9,5 @@ applications:
   path: .
   memory: 512M
   services:
-    - speech_to_text
-  host: AmbulanceDispatcherWebApplication
+    - S2T_Group<number> #TODO use case 3 Enter name of your speech to text service instance 
+  host: hostname_for_ambulancedispatcherwebapp  #TODO use case 3 Enter hostname for your ambulance dispatcher web application

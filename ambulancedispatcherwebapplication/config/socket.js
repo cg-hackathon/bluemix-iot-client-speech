@@ -17,11 +17,11 @@ module.exports = function(io, speechToText) {
 	var geocoder = require('node-geocoder')(geocoderProvider,
 			geocoderHttpAdapter);
 
-	// settings for communication with RoutWebApp
-	// TODO AJUST TO YOUR ENVIRONMENT!
+	// settings for communication with RouteWebApp
+	// TODO use case 3 ADJUST TO YOUR ENVIRONMENT!
 	var routeWebAppCallURL = 'http://routewebapplication.mybluemix.net/postEmergencyPosition/';
 	// var routeWebAppCallURL = 'http://localhost:9080/RouteWebApplication/postEmergencyPosition/';
-	// END OF AJUSTMENT TO YOUR ENVIRONMENT!
+	// END OF ADJUSTMENT TO YOUR ENVIRONMENT!
 
 	// Create a session on socket connection
 	io.use(function(socket, next) {
