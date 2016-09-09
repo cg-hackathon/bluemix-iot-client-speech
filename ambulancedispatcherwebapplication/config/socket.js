@@ -80,8 +80,7 @@ module.exports = function(io, speechToText) {
 														body : JSON
 																.stringify({
 																	"latitude" : results[0].latitude,
-																	"longitude" : results[0].longitude,
-																	"emergencyID": -1
+																	"longitude" : results[0].longitude
 																})
 													},
 													function(error, response,
