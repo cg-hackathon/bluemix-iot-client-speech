@@ -1,7 +1,7 @@
 ---
 declared-services:
   speech-to-text-service:
-    label: speech_to_text
+    label: SpeechToText
     plan: standard
 applications:
 - name: AmbulanceDispatcherWebApp
@@ -9,5 +9,5 @@ applications:
   path: .
   memory: 512M
   services:
-    - speech_to_text
+    - SpeechToText
   host: AmbulanceDispatcherWebApplication

@@ -18,9 +18,9 @@ module.exports = function(io, speechToText) {
 			geocoderHttpAdapter);
 
 	// settings for communication with RoutWebApp
-	// TODO AJUST TO YOUR ENVIRONMENT!
-	var routeWebAppCallURL = 'http://routewebapplication.mybluemix.net/postEmergencyPosition/';
-	// var routeWebAppCallURL = 'http://localhost:9080/RouteWebApplication/postEmergencyPosition/';
+	// TODO practice5: AJUST TO YOUR ENVIRONMENT!
+	var routeWebAppCallURL = 'http://routewebapplication.mybluemix.net/getEmergencyLocation/';
+	// var routeWebAppCallURL = 'http://localhost:9080/RouteWebApplication/getEmergencyLocation/';
 	// END OF AJUSTMENT TO YOUR ENVIRONMENT!
 
 	// Create a session on socket connection
