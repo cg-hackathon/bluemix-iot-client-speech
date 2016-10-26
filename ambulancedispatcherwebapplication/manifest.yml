@@ -1,5 +1,5 @@
 ---
-declared-services:
+declared-services: #TODO use case 4: Enter name of your speech to text service instance
   speech-to-text-service:
     label: SpeechToText
     plan: standard
@@ -8,6 +8,6 @@ applications:
   command: node app.js
   path: .
   memory: 512M
-  services:
+  services: #TODO use case 4: Enter name and host of your speech to text service instance 
     - SpeechToText
   host: AmbulanceDispatcherWebApplication
