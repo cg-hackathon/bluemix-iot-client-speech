@@ -19,7 +19,7 @@ module.exports = function(io, speechToText) {
 
 	// settings for communication with RoutWebApp
 	// TODO practice5: AJUST TO YOUR ENVIRONMENT!
-	var routeWebAppCallURL = 'http://routewebapplication.mybluemix.net/getEmergencyLocation/';
+	var routeWebAppCallURL = 'https://routewebapplication.mybluemix.net/getEmergencyLocation/';
 	// var routeWebAppCallURL = 'http://localhost:9080/RouteWebApplication/getEmergencyLocation/';
 	// END OF AJUSTMENT TO YOUR ENVIRONMENT!
 
